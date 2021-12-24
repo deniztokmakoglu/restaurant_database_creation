@@ -1,0 +1,68 @@
+- The partitioning of the tasks were done similar to the previous Milestones. We were equally involved 
+in all the decision making, designing and coding process.
+
+Step 1
+------
+We created 4 blocks (the number of blocks is saved in the app and can be changed later) based on 
+the starting letter of the restaurant name. We use a list of letters and digits (0 - 9) and divide 
+it into 4(n_blocks) sublists and check if the first letter of the restaurant name is in the sublist.
+We partition the restaurants into blocks based on this.
+
+Step 2
+-------
+We create indexes based on the first 4 digits of the zip code. The first 3 digits of the zip code
+depicts the geographical area of the place within the US and the last two digits give more detailed
+information about the location. Since all of the data we have is for restaurant in and around Chicago, 
+first 3 digits wouldn't change anything. We choose to have 4 digits because we wanted to be the restaurants
+coming from the index to be similar enough but also different enough so that our matching algorithm is left 
+with some amount of work as well.
+
+Step 3
+------
+
+The results of the runs are as follows;
+
+1.
+MS3 100 - .4s
+
+MS4 1k - 4.08s
+
+Ms3 100 w/ blocking - .2s
+
+Ms4 1k w/ blocking - 1.53s
+
+
+2.
+MS3 100 - .4s
+
+MS4 1k - 4.02s
+
+Ms3 100 w/ blocking - .22s
+
+Ms4 1k w/ blocking - 1.38s
+
+
+3.
+MS3 100 - .42s
+
+MS4 1k - 3.7s 
+
+Ms3 100 w/ blocking - .22s
+
+Ms4 1k w/ blocking - 1.39s
+
+Average
+MS3 100 - 0.4067s
+
+MS4 1k - 3.934s
+
+Ms3 100 w/ blocking - 0.2133s
+
+Ms4 1k w/ blocking - 1.43s 
+
+The blocking significantly increases the performance 
+of the code by 90% and 175% respectively. However, this 
+comes with a cost of accuracy as when we manually checked
+the number of matches in each run, it was significantly lower.
+
+

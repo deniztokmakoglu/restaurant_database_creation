@@ -1,0 +1,6 @@
+Authors: Jacob Jameson & Deniz Tokmakoglu
+
+We essentially did all of the work for this MS together in the same room working on each task simulataneously. We spent
+a considerable amount of time together just figuring out how making the commits to the database works and trying to make sense
+of the MS in general and talking through the assignment. Once finished, we have each made solo passes through it and
+attempted to clean up some of our functions we wrote.

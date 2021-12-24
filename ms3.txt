@@ -1,0 +1,10 @@
+The work split for MS3 was similar to that described in earlier sections of this project-- where all coding 
+and project design was done together in the same room.
+
+The matching algorithm relies on Jaro Winkler distance. It initially checkes the state and city of the restaurant pair and if they are
+similar enough, checks the address of the restaurant to determine if they are the same restaurant. The parameter threshold for 
+similarity can be changed. For this project we used 0.8
+
+The algorithm for how we select the master record relies on comparing lenght of strings. For example if there were two linked
+restaurants and one of them was "DAMN DINING" and the other "DAMEN DINING", "DAMNEN DINING" would be selected as the primiary restaurans
+name as the string is longet than "DAMN DINING".
